@@ -1,0 +1,16 @@
+[settings]
+arch=x86_64
+build_type=Debug
+compiler=gcc
+compiler.cppstd=gnu17
+compiler.libcxx=libstdc++11
+compiler.version=11
+os=Windows
+
+[buildenv]
+PLATFORM=Native
+QT_DIR=D:/programs/Qt/6.7.1/mingw_64
+
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+tools.build:compiler_executables={'c': 'D:/programs/Qt/Tools/mingw1120_64/bin/gcc.exe', 'cpp': 'D:/programs/Qt/Tools/mingw1120_64/bin/g++.exe'}
