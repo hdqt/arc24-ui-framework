@@ -1,12 +1,12 @@
 from conan import ConanFile
 from conan.tools.cmake import cmake_layout, CMakeDeps, CMakeToolchain, CMake
 
-class Qt6CmakeTemplate(ConanFile):
-    name = "qt6-cmake-template"
+class UIFramework(ConanFile):
+    name = "ui-framework"
     version = "1.0.0"
     license = "MIT"
     author = "Dang Nguyen nguyenhaidang911@gmail.com"
-    url = "https://github.com/hdqt/qt6-cmake-template.git"
+    url = "https://github.com/hdqt/arc24-ui-framework.git"
     settings = "os", "arch", "compiler", "build_type"
     options = {
         "shared": [True, False]

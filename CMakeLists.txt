@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.18)
 
 set(QT_CREATOR_SKIP_CONAN_SETUP ON)
 
-project(qt6-cmake-template LANGUAGES CXX)
+project(ui-framework LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
