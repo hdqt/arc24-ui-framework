@@ -29,7 +29,7 @@ if (BUILD_UNIT_TESTS)
     find_package(GTest)
 endif()
 
-add_subdirectory(libsrc)
+add_subdirectory(code)
 
 include(GNUInstallDirs)
 
