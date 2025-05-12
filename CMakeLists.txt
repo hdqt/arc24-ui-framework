@@ -13,7 +13,9 @@ if (QT_CREATOR_SKIP_CONAN_SETUP)
 endif()
 
 option(BUILD_UNIT_TESTS "Build Unit tests option" ON)
+message(STATUS "SKIP_BUILD_UNIT_TESTS: ${SKIP_BUILD_UNIT_TESTS}")
 if (SKIP_BUILD_UNIT_TESTS)
+    message(STATUS "Disable Unit tests due to non-native platform")
     set(BUILD_UNIT_TESTS OFF CACHE BOOL "Disable Unit tests due to non-native platform" FORCE)
 endif()
 
@@ -29,7 +31,7 @@ if (BUILD_UNIT_TESTS)
     find_package(GTest)
 endif()
 
-add_subdirectory(libsrc)
+add_subdirectory(code)
 
 include(GNUInstallDirs)
 
