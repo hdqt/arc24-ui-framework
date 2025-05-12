@@ -6,7 +6,6 @@
 // Built-in includes
 
 // Libraries includes
-#include <gmock/gmock.h>
 
 // Qt framework includes
 
@@ -19,20 +18,16 @@
 
 // <---------------------------------------------------------------------- END
 
-class MockIDummy
+class IDummy
 {
 public:
     // ***********************************************************************
     // * PUBLIC FUNCTIONS
     // ***********************************************************************
-    virtual ~MockIDummy() = default;
+    virtual ~IDummy() = default;
 
-    MOCK_METHOD(void, work, ());
+    virtual void work() = 0;
 
-    static std::shared_ptr<MockIDummy> create()
-    {
-        return std::shared_ptr<::testing::StrictMock<MockIDummy>>();
-    }
     // ***********************************************************************
     // * PUBLIC VARIABLES
     // ***********************************************************************

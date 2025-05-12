@@ -1,4 +1,5 @@
 set(TARGET_PUBLIC_SOURCES
+    ./IDummy.hpp
     ./UIFramework/Infrastructure/ServiceProvider.hpp
 )
 
