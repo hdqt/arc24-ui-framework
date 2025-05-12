@@ -10,3 +10,7 @@ endif()
 
 target_sources(lib${PROJECT_NAME} PRIVATE ${TARGET_PUBLIC_SOURCES})
 target_include_directories(lib${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+# if (BUILD_UNIT_TESTS)
+#     target_include_directories(lib${PROJECT_NAME}-gmock PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+# endif()
